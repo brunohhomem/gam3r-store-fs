@@ -4,7 +4,7 @@ import { Produto, produtos } from 'src/core';
 @Controller('produtos')
 export class ProdutoController {
   @Get()
-  obterProdutos(): Produto[] {
+  async obterProdutos(): Promise<Produto[]> {
     return produtos.map((produto) => ({
       ...produto,
       especificacoes: { destaque: produto.especificacoes.destaque },

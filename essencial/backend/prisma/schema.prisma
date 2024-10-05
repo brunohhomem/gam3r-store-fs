@@ -31,3 +31,12 @@ model Produto {
 
   @@map("produtos")
 }
+
+model Usuario {
+  id    Int    @id @default(autoincrement())
+  nome  String
+  email String
+  senha String
+
+  @@map("usuarios")
+}

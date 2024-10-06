@@ -1,5 +1,5 @@
 'use client'
-import { Produto } from '@/core'
+import { Produto } from '@gstore/core'
 import { useCallback, useEffect, useState } from 'react'
 
 const urlBase = 'http://localhost:4000'
@@ -19,8 +19,7 @@ export default function useProdutos() {
     const resp = await fetch(`${urlBase}/produtos/${id}`)
     const produto = await resp.json()
     return produto ?? null
-  },
-  [])
+  }, [])
 
   useEffect(() => {
     obterProdutos().then(setProdutos)

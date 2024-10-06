@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaProvider } from './../db/prisma.provider';
-import { Produto } from '../core';
+import { Produto } from '@gstore/core';
 
 @Injectable()
 export class ProdutoPrisma {

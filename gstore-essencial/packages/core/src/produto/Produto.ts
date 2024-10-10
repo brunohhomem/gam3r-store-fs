@@ -13,3 +13,4 @@ export default interface Produto extends Precificavel {
   tags: string[]
   especificacoes: Especificacoes
 }
+ 

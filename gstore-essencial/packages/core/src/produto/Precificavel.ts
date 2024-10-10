@@ -5,3 +5,4 @@ export default interface Precificavel {
   maiorPreco: number
   precoMedio: number
 }
+ 

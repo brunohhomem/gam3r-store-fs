@@ -23,6 +23,7 @@ export default function ProdutoItem(props: ProdutoItemProps) {
         <NotaReview nota={produto.nota}/>
       </div>
 
+
       <div className="h-48 w-full relative">
         <Image
           src={produto.imagem}

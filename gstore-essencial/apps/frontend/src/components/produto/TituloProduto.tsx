@@ -13,3 +13,4 @@ export default function TituloProduto(props: TituloProdutoProps) {
         </div>
     )
 }
+
